@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio OS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Bureau -->
+    <div id="desktop">
+        <div class="icon" onclick="openWindow('about')">
+            <img src="assets/icons/about.png" alt="À propos">
+            <span>À Propos</span>
+        </div>
+        <div class="icon" onclick="openWindow('projects')">
+            <img src="assets/icons/projects.png" alt="Projets">
+            <span>Projets</span>
+        </div>
+        <div class="icon" onclick="openWindow('contact')">
+            <img src="assets/icons/contact.png" alt="Contact">
+            <span>Contact</span>
+        </div>
+        <div class="icon" onclick="openWindow('compétences')">
+            <img src="assets/icons/compétences.png" alt="Compétences">
+            <span>Compétences</span>
+        </div>
+    </div>
+
+    <!-- Fenêtres -->
+    <div id="window-about" class="window">
+        <div class="window-header">
+            <h3>À propos</h3>
+            <div class="window-button">
+                <button onclick="minimizeWindow('about')">-</button>
+                <button onclick="toggleMaximize('about')">□</button>
+                <button onclick="closeWindow('about')">x</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <p>Bienvenue ! Moi c'est Téo Mazé ! Je suis actuellement en étude au CESI, en développement d'applications et de sites WEB !<br>
+                Pasionné par l'informatique depuis le collège, principalement l'Hardware, je me suis dis, pourquoi ne pas faire mon Portfolio sur le thème de Windows 11 !<br>
+                Et donc voici mon Portfolio crée en HTML/CSS/JS
+                <img src="assets/images/Téo Mazé CV.pdf.pdf" height="75" width="75" style="margin-right: 10px;"/>
+            </p>
+        </div>
+        <div class="resizer"></div>
+    </div>
+
+    <div id="window-projects" class="window">
+        <div class="window-header">
+            <h3>Projets</h3>
+            <div class="window-button">
+                <button onclick="minimizeWindow('projects')">-</button>
+                <button onclick="toggleMaximize('projects')">□</button>
+                <button onclick="closeWindow('projects')">x</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <p>Aspirateur robot : <a href="https://github.com/Yoannmey/CESIr_la_poussiere">CESIr_la_poussiere</a></p>
+            <p>Application Android : Quizz</p>
+            <p>CasseBrique : Casse Brique Animal Crossing</p>
+            <p>Site Web PC : Création de mon site Web de PC</p>
+            <img src="https://cdn.discordapp.com/attachments/1159100289761153075/1361599441877860362/PC_HardWhere_Home_page_design_-_1.png?ex=67ff57cc&is=67fe064c&hm=9a3d2ac83b7009c1eab075a839eaaf23969bdc21e8b2656b71e5ad3586d481b3&
+            " height="75" width="75" style="margin-right: 10px;"/>
+            <p>Pédalier Recharge de Téléphone : Création d'un péadlier recharge de Téléphone crée de A à Z</p>
+            <img src="https://cdn.discordapp.com/attachments/1159100289761153075/1361598885604364348/image.jpg?ex=67ff5747&is=67fe05c7&hm=f1facefddb7ac83461c6f571a8e5b35b2eeac15e1502a57d64d18f7f07cd05b9&
+            " height="75" width="75" style="margin-right: 10px;"/>
+        </div>
+        <div class="resizer"></div>
+    </div>
+
+    <div id="window-contact" class="window">
+        <div class="window-header">
+            <h3>Contact</h3>
+            <div class="window-button">
+                <button onclick="minimizeWindow('contact')">-</button>
+                <button onclick="toggleMaximize('contact')">□</button>
+                <button onclick="closeWindow('contact')">x</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <p> Téléphone : 06 64 62 33 57<br>
+                <img src="assets/icons/contact.png" alt="Contact" height="15" width="15">
+                Email : teo.maze@viacesi.fr<br>
+                <img src="assets/icons/instagram.png" alt="Contact" height="15" width="15">
+                Instagram : teomaze6<br>
+                <img src="assets/icons/x.jpg" alt="Contact" height="15" width="15">
+                X : DexlaZ_29200
+            </p>
+        </div>
+        <div class="resizer"></div>
+    </div>
+
+    <div id="window-compétences" class="window">
+        <div class="window-header">
+            <h3>Compétences</h3>
+            <div class="window-button">
+                <button onclick="minimizeWindow('compétences')">-</button>
+                <button onclick="toggleMaximize('compétences')">□</button>
+                <button onclick="closeWindow('compétences')">x</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-plain.svg" height="75" width="75" style="margin-right: 10px;"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" height="75" width="75" style="margin-right: 10px;"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" height="75" width="75" style="margin-right: 10px;"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" height="75" width="75" style="margin-right: 10px;"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" height="75" width="75" style="margin-right: 10px;"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" height="75" width="75" style="margin-right: 10px;"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" height="75" width="75" style="margin-right: 10px;"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg" height="75" width="75" style="margin-right: 10px;"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" height="75" width="75" style="margin-right: 10px;"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg" height="75" width="75" style="margin-right: 10px;"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-plain-wordmark.svg" height="75" width="75" style="margin-right: 10px;"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" height="75" width="75" style="margin-right: 10px;"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg" height="75" width="75" style="margin-right: 10px;"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" height="75" width="75" style="margin-right: 10px;"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" height="75" width="75" style="margin-right: 10px;"/>
+        </div>
+        <div class="resizer"></div>
+    </div>
+
+    <!-- Barre des tâches -->
+    <div id="taskbar">
+        <div id="start-menu-button" onclick="toggleStartMenu()">
+            <img src="assets/icons/windows.png" alt="Windows">
+        </div>
+        <div id="taskbar-icons"></div>
+        <div id="clock"></div>
+    </div>
+
+    <!-- Menu Démarrer -->
+    <div id="start-menu">
+        <h2>Menu Démarrer</h2>
+        <input type="text" id="search-bar" placeholder="Rechercher...">
+        <div class="start-menu-divider"></div>
+        <div class="pinned-apps">
+            <div class="pinned-app">
+                <img src="assets/icons/explorer.png" alt="Explorer">
+                <span>Explorer</span>
+            </div>
+            <div class="pinned-app">
+                <img src="assets/icons/settings.png" alt="Paramètres">
+                <span>Paramètres</span>
+            </div>
+            <div class="pinned-app">
+                <img src="assets/icons/notepad.png" alt="Bloc-notes">
+                <span>Bloc-notes</span>
+            </div>
+            <div class="pinned-app">
+                <img src="assets/icons/edge.png" alt="Navigateur">
+                <span>Edge</span>
+            </div>
+        </div>
+        <div class="start-menu-divider"></div>
+        <a href="index.html">Déconnexion</a>
+    </div>
+
+    <script defer src="script.js"></script>
+</body>
+
+</html>
